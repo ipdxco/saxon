@@ -4,7 +4,7 @@ ARG SAXON_HE_REPOSITORY=pl-strflt/Saxon-HE
 ARG SAXON_HE_SHA=392d705f7d603b0cfdd4c95fddd3c0a80590a21b
 
 ARG ANT_REPOSITORY=pl-strflt/ant
-ARG ANT_SHA=b99f737b6302e5561b30db90c2d3a2541c4610f2
+ARG ANT_SHA=d0b3d9e8c9a975568a6d9efa8884f5db69cb76f3
 
 RUN apt-get update && apt-get install -y unzip jq
 
