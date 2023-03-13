@@ -1,8 +1,6 @@
 name: Docker
 on:
-  push:
-    tags:
-      - '*'
+  create:
   workflow_dispatch:
     inputs:
       tag:
@@ -11,6 +9,7 @@ on:
         default: 'latest'
 jobs:
   docker:
+    if: github.event_name == 'workflow_dispatch' || github.event.ref_type == 'tag'
     name: Docker
     runs-on: ubuntu-latest
     permissions:
@@ -31,4 +30,4 @@ jobs:
           platforms: linux/amd64,linux/arm64
           push: true
           tags: |
-            ghcr.io/${{ github.repository }}:${{ github.event.inputs.tag || github.event.ref_name }}
+            ghcr.io/${{ github.repository }}:${{ github.event.inputs.tag || github.event.ref }}
