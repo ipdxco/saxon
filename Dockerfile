@@ -1,4 +1,4 @@
-FROM eclipse-temurin:11
+FROM eclipse-temurin:11-jre
 
 ARG SAXON_HE_REPOSITORY=pl-strflt/Saxon-HE
 ARG SAXON_HE_SHA=392d705f7d603b0cfdd4c95fddd3c0a80590a21b
