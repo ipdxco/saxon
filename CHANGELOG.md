@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+## [1.0.4] - 2023-03-20
+### Changed
+- Added updated `gotest.xsl` which supports parsing panics
+
 ## [1.0.3] - 2023-03-14
 ### Changed
 - Made the docker image smaller by using `jre` instead of `jdk`
